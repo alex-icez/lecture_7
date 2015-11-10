@@ -22,7 +22,10 @@ public class Sample4 {
 	
 	public static void main(String[] args) {
 		int w = 2048, h = 1024;
+		int w2 = w >> 1, h2 = h >> 1; 
 		BufferedImage img = new BufferedImage(w, h, BufferedImage.TYPE_INT_RGB);
+		
+		
 		
 		
 
