@@ -21,6 +21,7 @@ public class Sample2 {
 				r = (x ^ y) & 0xFF;
 				g = (x >> 1 ^ y) & 0xFF;
 				b = (x ^ y >> 1) & 0xFF;
+				System.out.println(l*b);
 				int color = (int)(l * b) | ((int)(l * g) << 8) | ((int)(l * r) << 16);
 				img.setRGB(x, y, color);
 			}
