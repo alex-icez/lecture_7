@@ -33,11 +33,14 @@ public class Sample4 {
 			for(int x = 0; x < w; x++) {
 				xx = 3.0 * (x - w2) / w;
 				yy = 1.5 * (y - h2) / h;
+				int res = fact(xx, yy); 
 				if (fact(xx, yy) == -1.0) 
 					img.setRGB(x, y, 0x00ff00);
-				else
+				else {
+					res = res & 0xFF
 					img.setRGB(x, y, 0x0000ff);
-			}
+					
+				}
 		ImageIO.write(img, "png", new File("m.png"));
 		
 
