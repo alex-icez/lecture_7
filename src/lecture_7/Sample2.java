@@ -12,20 +12,19 @@ public class Sample2 {
 		int w = 1024, h = 1024;
 		int w2 = w >> 1, h2 = h >> 1;
 		BufferedImage img = new BufferedImage(w, h, BufferedImage.TYPE_INT_RGB);
-		for(int y = 0; y < h; y++)
-			for(int x = 0; x < w; x++) {
+		for (int y = 0; y < h; y++)
+			for (int x = 0; x < w; x++) {
 				int r, g, b;
-				double l = 1.0 + 0.5 * Math.sin(Math.
-						sqrt((x - w2) * (x - w2) + (y - h2) * (y - h2)));
-				
-				
-				r = (x ^ y) & 0xFF;
+				double l = 1.0 + 0.5 * Math.sin(Math.sqrt((x - w2) * (x - w2)
+						+ (y - h2) * (y - h2)));
+
+				r = l * (x ^ y) & 0xFF;
 				g = (x >> 1 ^ y) & 0xFF;
-				b = (x ^ y >> 1) & 0xFF; 
+				b = (x ^ y >> 1) & 0xFF;
 				int color = b | (g << 8) | (r << 16);
 				img.setRGB(x, y, color);
 			}
-		
+
 		ImageIO.write(img, "png", new File("pic2.png"));
 	}
 
