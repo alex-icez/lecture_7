@@ -18,11 +18,11 @@ public class Sample2 {
 				double l = 1.0 + 0.5 * Math.sin(0.05 * Math.sqrt((x - w2) * (x - w2)
 						+ (y - h2) * (y - h2)));
 
-				r = (x ^ y) & 0xFF;
-				g = (x >> 1 ^ y) & 0xFF;
-				b = (x ^ y >> 1) & 0xFF;
+				r = ((int)(l * (x ^ y))) & 0xFF;
+				g = ((int)(l * (x >> 1 ^ y)) & 0xFF;
+				b = ((int)(l * (x ^ y >> 1)) & 0xFF;
 				System.out.println(l*b);
-				int color = (int)(l * b) | ((int)(l * g) << 8) | ((int)(l * r) << 16);
+				int color = b;// | ((int)(l * g) << 8) | ((int)(l * r) << 16);
 				img.setRGB(x, y, color);
 			}
 
