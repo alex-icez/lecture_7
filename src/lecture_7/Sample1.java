@@ -36,8 +36,7 @@ class LinkedList<T> implements List<T> {
 		Item iter = head;
 		for(int i = 0; i < index; i++)
 			iter = iter.next;
-		
-		
+		return iter.value;
 	}
 }
 
