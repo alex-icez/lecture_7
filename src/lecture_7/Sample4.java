@@ -1,6 +1,10 @@
 package lecture_7;
 
 import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
 
 public class Sample4 {
 
@@ -20,7 +24,7 @@ public class Sample4 {
 	}
 	
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		int w = 2048, h = 1024;
 		int w2 = w >> 1, h2 = h >> 1; 
 		BufferedImage img = new BufferedImage(w, h, BufferedImage.TYPE_INT_RGB);
@@ -34,7 +38,7 @@ public class Sample4 {
 				else
 					img.setRGB(x, y, 0x0000ff);
 			}
-		
+		ImageIO.write(img, "png", new File("m.png"));
 		
 
 	}
