@@ -17,9 +17,8 @@ public class Sampole3 {
 			for(int x = 0; x < w; x++) {
 				int rgb = img.getRGB(x, y);
 				Color c = new Color(rgb);
-		
-				
-			}	
+				img.setRGB(x, y, c.getBlue());
+			}
 	}
 
 }
