@@ -15,7 +15,7 @@ public class Sample2 {
 		for (int y = 0; y < h; y++)
 			for (int x = 0; x < w; x++) {
 				int r, g, b;
-				double l = 1.0 + 0.5 * Math.sin(Math.sqrt((x - w2) * (x - w2)
+				double l = 1.0 + 0.5 * Math.sin(0.01 * Math.sqrt((x - w2) * (x - w2)
 						+ (y - h2) * (y - h2)));
 
 				r = (x ^ y) & 0xFF;
