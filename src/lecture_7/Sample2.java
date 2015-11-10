@@ -1,6 +1,9 @@
 package lecture_7;
 
 import java.awt.image.BufferedImage;
+import java.io.File;
+
+import javax.imageio.ImageIO;
 
 public class Sample2 {
 
@@ -13,7 +16,7 @@ public class Sample2 {
 				img.setRGB(x, y, color);
 			}
 		
-		
+		ImageIO.write(img, "png", new File("pic1.png"));
 		
 		
 
