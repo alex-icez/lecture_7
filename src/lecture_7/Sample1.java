@@ -4,6 +4,9 @@ interface List<T> {
 	void add(T value);
 	T get(int index);
 	void set(int index, T value);
+	void add(int index, value);
+	void remove(int index);
+	int size();
 }
 
 
