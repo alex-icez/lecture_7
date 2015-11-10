@@ -4,10 +4,16 @@ interface List<T> {
 	void add(T value);
 	T get(int index);
 	void set(int index, T value);
-	void add(int index, value);
+	void add(int index, T value);
 	void remove(int index);
 	int size();
 }
+
+class LinkedList<T> implements List<T> {
+	
+	
+}
+
 
 
 public class Sample1 {
