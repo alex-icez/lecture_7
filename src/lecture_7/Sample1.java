@@ -98,9 +98,9 @@ public class Sample1 {
 	public static void main(String[] args) {
 		List<Integer> l = new LinkedList<>();
 		Scanner s = new Scanner(System.in);
-		
+		String act;
 		while(true) {
-	
+			act = s.next();
 	
 		
 			
