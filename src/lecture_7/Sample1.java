@@ -29,7 +29,10 @@ class LinkedList<T> implements List<T> {
 	}
 	
 	public T get(int index) {
-		
+		if (index < 0 || index >= size) {
+			System.out.println("Index incorrect!!!");
+			return null;
+		}
 		
 	}
 }
