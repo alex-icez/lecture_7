@@ -17,6 +17,10 @@ class LinkedList<T> implements List<T> {
 			this.value = value;
 		}
 	}
+	
+	Item head = null;
+	
+	
 }
 
 
