@@ -13,8 +13,14 @@ public class Sample4 {
 		return fact(x1, y1, xc, yc, k + 1);
 	}
 	
+	boolean fact(double x, double y) {
+		return fact(0, 0, x, y, 0);
+	}
+	
 	
 	public static void main(String[] args) {
+		BufferedImage img = new
+		
 		
 
 	}
