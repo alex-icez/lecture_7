@@ -13,6 +13,9 @@ public class Sample2 {
 		BufferedImage img = new BufferedImage(w, h, BufferedImage.TYPE_INT_ARGB);
 		for(int y = 0; y < h; y++)
 			for(int x = 0; x < w; x++) {
+				int r, g, b;
+				
+				
 				int color = 0xFF00FFFF;
 				img.setRGB(x, y, color);
 			}
