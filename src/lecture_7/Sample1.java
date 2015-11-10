@@ -55,6 +55,7 @@ class LinkedList<T> implements List<T> {
 			System.out.println("Index incorrect!!!");
 			return;
 		}
+		size--;
 		if (index == 0) {
 			head = head.next;
 			return;
@@ -63,7 +64,6 @@ class LinkedList<T> implements List<T> {
 		for(int i = 0; i < index - 1; i++)
 			iter = iter.next;
 		iter.next = iter.next.next;
-		
 	}
 	
 }
