@@ -1,5 +1,7 @@
 package lecture_7;
 
+import java.util.Scanner;
+
 interface List<T> {
 	void add(T value);
 	T get(int index);
@@ -95,8 +97,13 @@ class LinkedList<T> implements List<T> {
 public class Sample1 {
 	public static void main(String[] args) {
 		List<Integer> l = new LinkedList<>();
-
+		Scanner s = new Scanner(System.in);
+		
+		while(true) {
 	
 	
+		
+			
+		}
 	}
 }
