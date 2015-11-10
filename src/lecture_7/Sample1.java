@@ -93,6 +93,11 @@ class LinkedList<T> implements List<T> {
 
 	public String toString() {
 		String str = "";
+		Item iter = head;
+		while(iter != null) {
+			str += iter.value + " ";
+		}
+		return str;
 	}
 	
 	
