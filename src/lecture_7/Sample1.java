@@ -111,8 +111,11 @@ public class Sample1 {
 				case "get":
 					index  = s.nextInt();
 					System.out.println(l.get(index));
-					
-					
+					break;
+				case "insert":
+					index = s.nextInt();
+					value = s.nextInt();
+					l.insert(index, value);
 			}
 		}
 	}
