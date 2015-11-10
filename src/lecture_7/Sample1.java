@@ -123,6 +123,9 @@ public class Sample1 {
 					break;
 				case "exit":
 					break label;
+				case "print":
+					System.out.println(l);
+					break;
 			}
 		}
 	}
