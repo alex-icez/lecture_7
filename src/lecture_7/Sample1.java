@@ -57,9 +57,9 @@ class LinkedList<T> implements List<T> {
 		}
 		if (index == 0) {
 			head = head.next;
-			
+			return;
 		}
-		
+		Item iter = head;
 		
 		
 	}
