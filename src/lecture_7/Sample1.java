@@ -18,8 +18,10 @@ class LinkedList<T> implements List<T> {
 		}
 	}
 	
-	Item head = null;
+	private Item head = null;
+	private int size = 0;
 	
+	void add()
 	
 }
 
