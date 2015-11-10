@@ -25,6 +25,12 @@ class LinkedList<T> implements List<T> {
 		Item item = new Item(value);
 		item.next = head;
 		head = item;
+		size++;
+	}
+	
+	public T get(int index) {
+		
+		
 	}
 }
 
