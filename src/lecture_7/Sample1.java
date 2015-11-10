@@ -68,8 +68,17 @@ class LinkedList<T> implements List<T> {
 	}
 	
 	public void insert(int index, T value) {
-		
-		
+		if (index < 0 || index > size) {
+			System.out.println("Index incorrect!!!");
+			return;
+		}
+		Item item = new Item(value);
+		size++;
+		if (index == 0) {
+			item.next = head;
+			head = item;
+			return;
+		}
 		
 	}
 	
