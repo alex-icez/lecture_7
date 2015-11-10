@@ -21,7 +21,6 @@ class LinkedList<T> implements List<T> {
 	private Item head = null;
 	private int size = 0;
 	
-	@Override
 	public void add(T value) {
 		Item item = new Item(value);
 		item.next = head;
@@ -88,24 +87,12 @@ class LinkedList<T> implements List<T> {
 	
 	public int size() {
 		return size;
-	}
-
-	
-	
+	}	
 }
 
 
 
 public class Sample1 {
-
-	public static int max(List<Integer> l) {
-		int max = l.get(0);
-		for(int i = 1; i < l.size(); i++)
-			if (max < l.get(i))
-				max = l.get(i);
-		return max;
-	}
-	
 	public static void main(String[] args) {
 		List<Iteger> l = new LinkedList<>;
 	}
