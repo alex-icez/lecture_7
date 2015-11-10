@@ -13,13 +13,13 @@ public class Sample4 {
 		double y1 = 2 * xn * yn + yc;
 		double l = (x1 - xn) * (x1 - xn) + (y1 - yn) * (y1 - yn);
 		if (l > 100.0)
-			return l / (k + 1);
+			return (int)(l / (k + 1));
 		if (k > 100)
 			return -1;
 		return fact(x1, y1, xc, yc, k + 1);
 	}
 	
-	static boolean fact(double x, double y) {
+	static int fact(double x, double y) {
 		return fact(0, 0, x, y, 0);
 	}
 	
@@ -33,7 +33,7 @@ public class Sample4 {
 			for(int x = 0; x < w; x++) {
 				xx = 3.0 * (x - w2) / w;
 				yy = 1.5 * (y - h2) / h;
-				if (fact(xx, yy)) 
+				if (fact(xx, yy) == -1.0) 
 					img.setRGB(x, y, 0x00ff00);
 				else
 					img.setRGB(x, y, 0x0000ff);
