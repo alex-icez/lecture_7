@@ -10,7 +10,7 @@ public class Sample2 {
 		for(int y = 0; y < h; y++)
 			for(int x = 0; x < w; x++) {
 				int color = 0xFFFF0000;
-				
+				img.setRGB(x, y, color);
 		
 			}
 		
