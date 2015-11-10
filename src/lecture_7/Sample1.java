@@ -86,6 +86,10 @@ class LinkedList<T> implements List<T> {
 		iter.next = item;
 	}
 	
+	public int size() {
+		return size;
+	}
+	
 }
 
 
