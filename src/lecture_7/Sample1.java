@@ -27,7 +27,7 @@ class LinkedList<T> implements List<T> {
 		head = item;
 		size++;
 	}
-	
+
 	public T get(int index) {
 		if (index < 0 || index >= size) {
 			System.out.println("Index incorrect!!!");
@@ -50,6 +50,11 @@ class LinkedList<T> implements List<T> {
 		iter.value = value;
 	}
 	
+	public void remove(int index) {
+		
+		
+		
+	}
 	
 }
 
