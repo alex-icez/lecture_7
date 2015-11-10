@@ -74,7 +74,7 @@ class LinkedList<T> implements List<T> {
 public class Sample1 {
 
 	public static void main(String[] args) {
-
+		List<String> l;
 	}
 
 }
