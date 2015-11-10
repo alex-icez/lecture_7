@@ -73,9 +73,12 @@ class LinkedList<T> implements List<T> {
 
 public class Sample1 {
 
-	public static String max(List<Integer> l) {
+	public static int max(List<Integer> l) {
 		int max = l.get(0);
-		
+		for(int i = 1; i < l.size(); i++)
+			if (max < l.get(i))
+				max = l.get(i);
+		return max;
 	}
 	
 	public static void main(String[] args) {
