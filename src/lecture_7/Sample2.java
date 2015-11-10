@@ -1,9 +1,12 @@
 package lecture_7;
 
+import java.awt.image.BufferedImage;
+
 public class Sample2 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		int w = 1024, h = 1024;
+		BufferedImage img = new BufferedImage(w, h, imageType)
 
 	}
 
