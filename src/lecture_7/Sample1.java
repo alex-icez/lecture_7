@@ -111,6 +111,7 @@ public class Sample1 {
 		int index;
 		label: while(true) {
 			act = s.next();
+			System.out.println(act);
 			switch (act) {
 				case "add":
 					value = s.nextInt();
