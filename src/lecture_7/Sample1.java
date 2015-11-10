@@ -108,8 +108,11 @@ public class Sample1 {
 					value = s.nextInt();
 					l.add(value);
 					break;
-	
-		
+				case "get":
+					index  = s.nextInt();
+					System.out.println(l.get(index));
+					
+					
 			}
 		}
 	}
