@@ -27,7 +27,8 @@ public class Sample4 {
 		double xx, yy;
 		for(int y = 0; y < h; y++)
 			for(int x = 0; x < w; x++) {
-		
+				xx = 6.0 * (x - w2) / w;
+				yy = 6.0 * (y - h2) / h;
 				
 				
 				
