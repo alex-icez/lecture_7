@@ -38,6 +38,13 @@ class LinkedList<T> implements List<T> {
 			iter = iter.next;
 		return iter.value;
 	}
+	
+	public void set(int index, T value) {
+		
+		
+	}
+	
+	
 }
 
 
