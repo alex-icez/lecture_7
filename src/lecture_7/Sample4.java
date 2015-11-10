@@ -36,14 +36,12 @@ public class Sample4 {
 				int res = fact(xx, yy); 
 				if (fact(xx, yy) == -1.0) 
 					img.setRGB(x, y, 0x00ff00);
-				else {
-					res = res & 0xFF
-					img.setRGB(x, y, 0x0000ff);
-					
-				}
+				else 
+					img.setRGB(x, y, res & 0xFF);
+			}
 		ImageIO.write(img, "png", new File("m.png"));
 		
-
+		
 	}
 
 }
