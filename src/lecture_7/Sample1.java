@@ -99,11 +99,18 @@ public class Sample1 {
 		List<Integer> l = new LinkedList<>();
 		Scanner s = new Scanner(System.in);
 		String act;
+		int value;
+		int index;
 		while(true) {
 			act = s.next();
+			switch (act) {
+				case "add":
+					value = s.nextInt();
+					l.add(value);
+					break;
 	
 		
-			
+			}
 		}
 	}
 }
