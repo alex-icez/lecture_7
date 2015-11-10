@@ -14,7 +14,8 @@ public class Sample2 {
 		for(int y = 0; y < h; y++)
 			for(int x = 0; x < w; x++) {
 				int r, g, b;
-				
+				r = (x ^ y) & 0xFF;
+				g = (x >> 3 ^ y) & 0xFF;
 				
 				int color = 0xFF00FFFF;
 				img.setRGB(x, y, color);
