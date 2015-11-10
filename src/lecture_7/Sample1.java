@@ -101,7 +101,7 @@ public class Sample1 {
 		String act;
 		int value;
 		int index;
-		while(true) {
+		label: while(true) {
 			act = s.next();
 			switch (act) {
 				case "add":
@@ -117,6 +117,12 @@ public class Sample1 {
 					value = s.nextInt();
 					l.insert(index, value);
 					break;
+				case "remove":
+					index = s.nextInt();
+					l.remove(index);
+					break;
+				case "exit":
+					break label;
 			}
 		}
 	}
