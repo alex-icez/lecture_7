@@ -96,6 +96,7 @@ class LinkedList<T> implements List<T> {
 		Item iter = head;
 		while(iter != null) {
 			str += iter.value + " ";
+			iter = iter.next;
 		}
 		return str;
 	}	
