@@ -67,6 +67,12 @@ class LinkedList<T> implements List<T> {
 		iter.next = iter.next.next;
 	}
 	
+	public void insert(int index, T value) {
+		
+		
+		
+	}
+	
 }
 
 
