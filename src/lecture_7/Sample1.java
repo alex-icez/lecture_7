@@ -33,6 +33,10 @@ class LinkedList<T> implements List<T> {
 			System.out.println("Index incorrect!!!");
 			return null;
 		}
+		Item iter = head;
+		for(int i = 0; i < index; i++)
+			iter = iter.next;
+		
 		
 	}
 }
