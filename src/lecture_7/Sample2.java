@@ -10,10 +10,13 @@ public class Sample2 {
 
 	public static void main(String[] args) throws IOException {
 		int w = 1024, h = 1024;
+		int w2 = w >> 1, h2 = h >> 1;
 		BufferedImage img = new BufferedImage(w, h, BufferedImage.TYPE_INT_RGB);
 		for(int y = 0; y < h; y++)
 			for(int x = 0; x < w; x++) {
 				int r, g, b;
+				
+				
 				r = (x ^ y) & 0xFF;
 				g = (x >> 1 ^ y) & 0xFF;
 				b = (x ^ y >> 1) & 0xFF; 
