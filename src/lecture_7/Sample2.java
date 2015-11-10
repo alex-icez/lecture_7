@@ -16,7 +16,7 @@ public class Sample2 {
 				int r, g, b;
 				r = (x ^ y) & 0xFF;
 				g = (x >> 3 ^ y) & 0xFF;
-				
+				b = (x ^ y << 3) & 0xFF; 
 				int color = 0xFF00FFFF;
 				img.setRGB(x, y, color);
 			}
