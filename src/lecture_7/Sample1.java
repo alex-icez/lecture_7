@@ -73,8 +73,12 @@ class LinkedList<T> implements List<T> {
 
 public class Sample1 {
 
+	public static String max(List<String> l) {
+		
+	}
+	
 	public static void main(String[] args) {
-		List<String> l;
+		List<String> l = new LinkedList<>;
 	}
 
 }
