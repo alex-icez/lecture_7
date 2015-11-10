@@ -9,7 +9,8 @@ public class Sample2 {
 		BufferedImage img = new BufferedImage(w, h, BufferedImage.TYPE_INT_ARGB);
 		for(int y = 0; y < h; y++)
 			for(int x = 0; x < w; x++) {
-				int color = 0xAA;
+				int color = 0xFFFF0000;
+				
 		
 			}
 		
