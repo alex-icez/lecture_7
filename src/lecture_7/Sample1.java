@@ -51,6 +51,14 @@ class LinkedList<T> implements List<T> {
 	}
 	
 	public void remove(int index) {
+		if (index < 0 || index >= size) {
+			System.out.println("Index incorrect!!!");
+			return;
+		}
+		if (index == 0) {
+			head = head.next;
+			
+		}
 		
 		
 		
