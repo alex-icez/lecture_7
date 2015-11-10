@@ -4,7 +4,6 @@ interface List<T> {
 	void add(T value);
 	T get(int index);
 	void set(int index, T value);
-	void add(int index, T value);
 	void insert(int index, T value);
 	void remove(int index);
 	int size();
@@ -22,6 +21,7 @@ class LinkedList<T> implements List<T> {
 	private Item head = null;
 	private int size = 0;
 	
+	@Override
 	public void add(T value) {
 		Item item = new Item(value);
 		item.next = head;
@@ -89,6 +89,8 @@ class LinkedList<T> implements List<T> {
 	public int size() {
 		return size;
 	}
+
+	
 	
 }
 
