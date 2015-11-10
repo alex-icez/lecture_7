@@ -10,11 +10,10 @@ interface List<T> {
 }
 
 class LinkedList<T> implements List<T> {
-	class Item {
-		
-		
+	private class Item {
+		T value;
+		Item next;
 	}
-	
 }
 
 
