@@ -19,9 +19,9 @@ public class Sample2 {
 						+ (y - h2) * (y - h2)));
 
 				r = ((int)(l * (x ^ y))) & 0xFF;
-				g = ((int)(l * (x >> 1 ^ y)) & 0xFF;
-				b = ((int)(l * (x ^ y >> 1)) & 0xFF;
-				System.out.println(l*b);
+				g = ((int)(l * (x >> 1 ^ y))) & 0xFF;
+				b = ((int)(l * (x ^ y >> 1))) & 0xFF;
+				
 				int color = b;// | ((int)(l * g) << 8) | ((int)(l * r) << 16);
 				img.setRGB(x, y, color);
 			}
