@@ -89,7 +89,14 @@ class LinkedList<T> implements List<T> {
 	
 	public int size() {
 		return size;
-	}	
+	}
+
+	public String toString() {
+		String str = "";
+	}
+	
+	
+	
 }
 
 
