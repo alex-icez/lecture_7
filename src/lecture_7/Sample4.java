@@ -1,5 +1,7 @@
 package lecture_7;
 
+import java.awt.image.BufferedImage;
+
 public class Sample4 {
 
 	boolean fact(double xn, double yn, double xc, double yc, int k) {
@@ -19,7 +21,8 @@ public class Sample4 {
 	
 	
 	public static void main(String[] args) {
-		BufferedImage img = new
+		int w = 2048, h = 1024;
+		BufferedImage img = new BufferedImage(w, h, BufferedImage.TYPE_INT_RGB);
 		
 		
 
