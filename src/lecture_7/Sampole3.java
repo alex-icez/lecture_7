@@ -1,5 +1,6 @@
 package lecture_7;
 
+import java.awt.Color;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -15,7 +16,7 @@ public class Sampole3 {
 		for(int y = 0; y < h; y++) 
 			for(int x = 0; x < w; x++) {
 				int rgb = img.getRGB(x, y);
-
+				Color c = new Color(rgb);
 		
 				
 			}	
