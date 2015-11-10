@@ -3,7 +3,7 @@ package lecture_7;
 interface List<T> {
 	void add(T value);
 	T get(int index);
-	
+	void set(int index, T value);
 }
 
 
