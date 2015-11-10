@@ -6,10 +6,11 @@ public class Sample4 {
 		double x1 = xn * xn - yn * yn + xc;
 		double y1 = 2 * xn * yn + yc;
 		double l = (x1 - xn) * (x1 - xn) + (y1 - yn) * (y1 - yn);
-		if (l > 100.0 || k > 200)
+		if (l > 100.0)
 			return false;
-		return fact(x1, y1, xc, yc, )
-		
+		if (k > 100)
+			return true;
+		return fact(x1, y1, xc, yc, k + 1);
 	}
 	
 	
