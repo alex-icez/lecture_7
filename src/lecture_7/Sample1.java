@@ -116,6 +116,7 @@ public class Sample1 {
 					index = s.nextInt();
 					value = s.nextInt();
 					l.insert(index, value);
+					break;
 			}
 		}
 	}
