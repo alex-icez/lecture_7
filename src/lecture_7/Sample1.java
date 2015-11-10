@@ -21,8 +21,11 @@ class LinkedList<T> implements List<T> {
 	private Item head = null;
 	private int size = 0;
 	
-	void add()
-	
+	public add(T value) {
+		Item item = new Item(value);
+		item.next = head;
+		head = item;
+	}
 }
 
 
