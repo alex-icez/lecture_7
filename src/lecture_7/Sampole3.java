@@ -19,6 +19,6 @@ public class Sampole3 {
 				Color c = new Color(rgb);
 				img.setRGB(x, y, c.getBlue());
 			}
+		ImageIO.write(img, "png", new File("pict3.png"));
 	}
-
 }
