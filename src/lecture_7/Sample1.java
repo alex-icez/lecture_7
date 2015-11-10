@@ -60,7 +60,9 @@ class LinkedList<T> implements List<T> {
 			return;
 		}
 		Item iter = head;
-		
+		for(int i = 0; i < index - 1; i++)
+			iter = iter.next;
+		iter.next = iter.next.next;
 		
 	}
 	
