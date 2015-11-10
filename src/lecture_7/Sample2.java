@@ -24,7 +24,7 @@ public class Sample2 {
 				img.setRGB(x, y, color);
 			}
 		
-		ImageIO.write(img, "png", new File("pic1.png"));
+		ImageIO.write(img, "png", new File("pic2.png"));
 	}
 
 }
