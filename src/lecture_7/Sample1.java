@@ -40,8 +40,14 @@ class LinkedList<T> implements List<T> {
 	}
 	
 	public void set(int index, T value) {
-		
-		
+		if (index < 0 || index >= size) {
+			System.out.println("Index incorrect!!!");
+			return;
+		}
+		Item iter = head;
+		for(int i = 0; i < index; i++)
+			iter = iter.next;
+		iter.value = value;
 	}
 	
 	
