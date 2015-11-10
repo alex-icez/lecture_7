@@ -98,12 +98,8 @@ class LinkedList<T> implements List<T> {
 			str += iter.value + " ";
 		}
 		return str;
-	}
-	
-	
-	
+	}	
 }
-
 
 
 public class Sample1 {
