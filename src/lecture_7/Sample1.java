@@ -84,7 +84,6 @@ class LinkedList<T> implements List<T> {
 			iter = iter.next;
 		item.next = iter.next;
 		iter.next = item;
-		
 	}
 	
 }
