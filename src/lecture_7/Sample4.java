@@ -4,7 +4,7 @@ import java.awt.image.BufferedImage;
 
 public class Sample4 {
 
-	boolean fact(double xn, double yn, double xc, double yc, int k) {
+	static boolean fact(double xn, double yn, double xc, double yc, int k) {
 		double x1 = xn * xn - yn * yn + xc;
 		double y1 = 2 * xn * yn + yc;
 		double l = (x1 - xn) * (x1 - xn) + (y1 - yn) * (y1 - yn);
@@ -15,7 +15,7 @@ public class Sample4 {
 		return fact(x1, y1, xc, yc, k + 1);
 	}
 	
-	boolean fact(double x, double y) {
+	static boolean fact(double x, double y) {
 		return fact(0, 0, x, y, 0);
 	}
 	
@@ -31,8 +31,8 @@ public class Sample4 {
 				yy = 6.0 * (y - h2) / h;
 				if (fact(xx, yy)) 
 					img.setRGB(x, y, 0x00ff00);
-				
-				
+				else
+					img.setRGB(x, y, 0x0000ff);
 			}
 		
 		
