@@ -15,14 +15,14 @@ public class Sample2 {
 		for (int y = 0; y < h; y++)
 			for (int x = 0; x < w; x++) {
 				int r, g, b;
-				double l = 1.0 + 0.5 * Math.sin(0.05 * Math.sqrt((x - w2) * (x - w2)
+				double l = 0.5 + 0.5 * Math.sin(0.05 * Math.sqrt((x - w2) * (x - w2)
 						+ (y - h2) * (y - h2)));
 
 				r = (x ^ y) & 0xFF;
 				g = (x >> 1 ^ y) & 0xFF;
 				b = (x ^ y >> 1) & 0xFF;
 				if ((int)(l * b) == 256)
-					System.out.println("ERROR!!");
+					System.out.println("ERROR!!" + l);
 				int color = (int)(l * b);// | ((int)(l * g) << 8) | ((int)(l * r) << 16);
 				img.setRGB(x, y, color);
 			}
