@@ -11,7 +11,6 @@ public class Sample2 {
 			for(int x = 0; x < w; x++) {
 				int color = 0xFFFF0000;
 				img.setRGB(x, y, color);
-		
 			}
 		
 		
