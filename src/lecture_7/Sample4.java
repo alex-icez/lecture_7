@@ -32,7 +32,7 @@ public class Sample4 {
 		for(int y = 0; y < h; y++)
 			for(int x = 0; x < w; x++) {
 				xx = 3.0 * (x - w2) / w;
-				yy = 6.0 * (y - h2) / h;
+				yy = 1.5 * (y - h2) / h;
 				if (fact(xx, yy)) 
 					img.setRGB(x, y, 0x00ff00);
 				else
