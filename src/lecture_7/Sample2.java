@@ -23,7 +23,6 @@ public class Sample2 {
 				b = (x ^ y >> 1) & 0xFF;
 				if ((int)(l * b) == 256)
 					System.out.println("ERROR!!");
-				System.out.println(l*b);
 				int color = (int)(l * b);// | ((int)(l * g) << 8) | ((int)(l * r) << 16);
 				img.setRGB(x, y, color);
 			}
